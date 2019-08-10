@@ -26,10 +26,14 @@ In order to turn on the switch at IP 192.168.0.22 you can: `$ curl 192.168.0.22/
 
 ## Installation Instructions
 
-### Flash the Timethinker WS2
+### Flash the Timethinker WS using esptool.py
  1) Unplug your Timethinker WS2 device from the power line _(or you can burn your PC)_
  2) Connect your device to a serial adapter @ 3.3v
  3) Run the `flash.sh` script 
+ 
+### OR (windows users):
+ 1) Use ESP8266Flasher.exe (rboot.bin @ 0x0; blank_config.bin @ 0x1000; timethinker-ws2.bin @ 0x2000; baudrate 115200; flash size 8MByte; flash speed 40MHz, SPI mode DOUT)
+ 2) Flash
 
 ### Add device to Home app
  1) Connect your iPhone or iPad to the new wifi network `TimeThinkerWS2-xxx`
