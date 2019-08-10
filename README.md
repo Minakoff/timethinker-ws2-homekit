@@ -2,7 +2,7 @@ This firmware does NOT require anything else in order to work.
 You don't need HomeBridge running on a Raspberry-Pi or an MQTT server, since HomeKit runs natively are enough a Wi-Fi connection and an Apple Device.
 
 ### History
-I bought several Timehinker WS2 devices on aliexpress. HomeKit support was announced out of the box, but in fact I got a problem - the socket stopped responding in the Home app after one or two days of normal work. Thought it was available through a native application that did not suit me. 
+I bought several Timehinker WS2 devices on aliexpress. HomeKit support was announced out of the box, but in fact I got a problem - the socket stopped responding in the Home app after one or two days of normal work. At the same time it works well through a native application (that did not suit me). 
 Communication with technical support did not affect the situation - they remotely updated the firmware, but this did not help. Having disassembled the device, I found it is based on the ESP8266 chip similar to Sonoff Basic devices, but alternative GPIOs were used for relay, LED and button. Thus, I took the firmware from Gruppio (https://github.com/Gruppio/Sonoff-Homekit) and adapted (in fact, I simply changed the GPIO numbers) to those used by TimeThinker WS2. 
 Thus, I am sure that the device has lost the warranty, however, my tests have shown that work has stabilized in HomeKit for many days and finally it has become possible to fully use the device.
 
