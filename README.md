@@ -1,7 +1,7 @@
 This firmware does NOT require anything else in order to work.
 You don't need HomeBridge running on a Raspberry-Pi or an MQTT server, since HomeKit runs natively are enough a Wi-Fi connection and an Apple Device.
 
-!["Timethinker-WS2"](https://raw.githubusercontent.com/Minakoff/timethinker-ws2-homekit/socket.jpg" alt="Timethinker-WS2" width="220"/>
+!["Timethinker-WS2"](https://raw.githubusercontent.com/Minakoff/timethinker-ws2-homekit/socket.jpg)
 
 ### History
 I bought several Timehinker WS2 devices on Aliexpress. HomeKit support was announced out of the box, but in fact I got a problem - the socket stopped responding in the Home app after one or two days of normal work. At the same time it works well through a native application (that did not suit me). 
