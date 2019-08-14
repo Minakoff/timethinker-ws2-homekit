@@ -1,7 +1,7 @@
 This firmware does NOT require anything else in order to work.
 You don't need HomeBridge running on a Raspberry-Pi or an MQTT server, since HomeKit runs natively are enough a Wi-Fi connection and an Apple Device.
 
-![](https://github.com/Minakoff/timethinker-ws2-homekit/blob/master/socket.jpg)
+![](https://github.com/Minakoff/timethinker-ws2-homekit/blob/master/images/socket.jpg)
 
 ### History
 I bought several Timehinker WS2 devices on Aliexpress. HomeKit support was announced out of the box, but in fact I got a problem - the socket stopped responding in the Home app after one or two days of normal work. At the same time it works well through a native application (that did not suit me). 
@@ -28,16 +28,20 @@ In order to turn on the switch at IP 192.168.0.22 you can: `$ curl 192.168.0.22/
 
 ## Installation Instructions
 
+![](https://github.com/Minakoff/timethinker-ws2-homekit/blob/master/images/wiring.jpg)
+
 ### Flash the Timethinker WS using esptool.py:
  1) Unplug your Timethinker WS2 device from the power line _(or you can burn your PC)_
- 2) Connect your device to a serial adapter @ 3.3v
- 3) Run the `flash.sh` script 
+ 2) Short IO_0 and GND as shown with a piece of wire as shown
+ 3) Connect your device to a serial adapter @ 3.3v (GND, RX, TX, +3.3v) as shown
+ 4) Run the `flash.sh` script 
  
 ### or flash using ESP8266Flasher (Windows users):
  1) Unplug your Timethinker WS2 device from the power line _(or you can burn your PC)_
- 2) Connect your device to a serial adapter @ 3.3v
- 3) Use ESP8266Flasher.exe (rboot.bin @ 0x0; blank_config.bin @ 0x1000; timethinker-ws2.bin @ 0x2000; baudrate 115200; flash size 8MByte; flash speed 40MHz, SPI mode DOUT)
- 4) Hit Flash(F) button
+ 2) Short IO_0 and GND as shown with a piece of wire as shown
+ 3) Connect your device to a serial adapter @ 3.3v (GND, RX, TX, +3.3v) as shown
+ 4) Use ESP8266Flasher.exe (rboot.bin @ 0x0; blank_config.bin @ 0x1000; timethinker-ws2.bin @ 0x2000; baudrate 115200; flash size 8MByte; flash speed 40MHz, SPI mode DOUT)
+ 5) Hit Flash(F) button
 
 ### Add device to Home app
  1) Connect your iPhone or iPad to the new wifi network `TimeThinkerWS2-xxx`
