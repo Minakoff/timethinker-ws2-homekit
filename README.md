@@ -32,13 +32,13 @@ In order to turn on the switch at IP 192.168.0.22 you can: `$ curl 192.168.0.22/
 
 ### Flash the Timethinker WS using esptool.py:
  1) Unplug your Timethinker WS2 device from the power line _(or you can burn your PC)_
- 2) Short IO_0 and GND as shown with a piece of wire as shown
+ 2) Short IO_0 and GND with a piece of wire as shown
  3) Connect your device to a serial adapter @ 3.3v (GND, RX, TX, +3.3v) as shown
  4) Run the `flash.sh` script 
  
 ### or flash using ESP8266Flasher (Windows users):
  1) Unplug your Timethinker WS2 device from the power line _(or you can burn your PC)_
- 2) Short IO_0 and GND as shown with a piece of wire as shown
+ 2) Short IO_0 and GND with a piece of wire as shown
  3) Connect your device to a serial adapter @ 3.3v (GND, RX, TX, +3.3v) as shown
  4) Use ESP8266Flasher.exe (rboot.bin @ 0x0; blank_config.bin @ 0x1000; timethinker-ws2.bin @ 0x2000; baudrate 115200; flash size 8MByte; flash speed 40MHz, SPI mode DOUT)
  5) Hit Flash(F) button
