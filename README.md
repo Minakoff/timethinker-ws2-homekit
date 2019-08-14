@@ -28,7 +28,7 @@ In order to turn on the switch at IP 192.168.0.22 you can: `$ curl 192.168.0.22/
 
 ## Installation Instructions
 
-![](https://github.com/Minakoff/timethinker-ws2-homekit/blob/master/images/wiring.jpg)
+![](https://github.com/Minakoff/timethinker-ws2-homekit/blob/master/images/wiring.png)
 
 ### Flash the Timethinker WS using esptool.py:
  1) Unplug your Timethinker WS2 device from the power line _(or you can burn your PC)_
