@@ -1,5 +1,3 @@
-!(http://ae01.alicdn.com/kf/HTB1HUIdda5s3KVjSZFNq6AD3FXaX/Wifi-Switch-Ws2-Smart-Socket-For-Apple-Homekit-Alexa-Google-Home-Eu-Adapter-App-Voice-Remote.jpg_220x220q90.jpg)
-
 This firmware does NOT require anything else in order to work.
 You don't need HomeBridge running on a Raspberry-Pi or an MQTT server, since HomeKit runs natively are enough a Wi-Fi connection and an Apple Device.
 
